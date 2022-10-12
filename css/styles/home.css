@@ -1,0 +1,307 @@
+/* Header */
+
+.header {
+    background: url("../../img/home/bg.jpg") top center;
+    background-size: cover;
+    height: 100vh;
+}
+
+.name {
+    white-space: nowrap;
+}
+
+.header-container {
+    max-width: 1340px;
+    margin: 0 auto;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.pre-menu {
+
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.contact {
+    display: flex;
+    gap: 20px;
+
+}
+
+.contact p {
+    padding-left: 30px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    color: var(--g01);
+}
+
+.number::before {
+    content: '';
+    background-image: url("../../img/home/iphone.svg");
+    width: 23px;
+    height: 24px;
+    position: absolute;
+    left: 0;
+}
+
+.hours::before {
+    content: '';
+    background-image: url("../../img/home/clock.svg");
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    left: 0;
+}
+
+/* menu */
+
+.menu-container {
+    background: var(--bg-transparent);
+
+
+}
+
+.menu {
+
+    max-width: 1340px;
+    margin: 0 auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--g01);
+    height: 72px;
+}
+
+.menu h1 a {
+    color: #B4984E;
+}
+
+.menu ul {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+}
+
+.menu a {
+    text-decoration: none;
+    color: var(--g01);
+    transition: .3s;
+
+}
+
+.menu li a:hover {
+    color: var(--primary-color);
+
+}
+
+nav.active {
+    position: relative;
+
+}
+
+#btn-mobile {
+    background-image: url('../../img/home/menu-open.svg');
+    width: 24px;
+    height: 16px;
+    position: inherit;
+    z-index: 3;
+    display: none;
+    transition: .5s;
+    cursor: pointer;
+}
+
+#btn-mobile.open {
+    background-image: url('../../img/home/menu-close.svg');
+    width: 24px;
+    height: 24px;
+}
+
+nav.active ul {
+    background-color: var(--background-color);
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 200px;
+    text-align: center;
+    top: -5px;
+    right: -5px;
+
+}
+
+nav.active li {
+    position: relative;
+    padding: 5px 15px;
+}
+
+nav.active li a {
+    padding: 5px 10px;
+}
+
+nav.active li::after {
+    content: '';
+    height: 1px;
+    width: 100px;
+    left: 50px;
+    bottom: -10px;
+    background: var(--g09);
+    position: absolute;
+}
+
+nav.active li:last-child::after {
+    display: none;
+}
+
+/* Welcome */
+
+.welcome {
+
+    max-width: 1340px;
+    margin: 0 auto;
+    padding-left: 20px;
+    padding-right: 20px;
+
+    margin-top: 250px;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+
+
+}
+
+.welcome h1 {
+    color: var(--g01);
+}
+
+.welcome-info p {
+    
+    margin-top: 20px;
+    color: #B2B2B2;
+}
+
+.welcome-info-buttons {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin-top: 40px;
+}
+
+.welcome-info a {
+    text-decoration: none;
+}
+
+.aguia-img {
+    margin-left: -50px;
+    width: 630px;
+}
+.aguia-img img {
+    width: 100%;
+    display: block;
+}
+
+@media (max-width: 1450px) {
+    .welcome-info h1 {
+        font-size: 45px;
+        line-height: 55px;
+
+    }
+}
+
+@media (max-width: 1250px) {
+
+    .menu ul,
+    .call-to-action {
+        display: none;
+    }
+
+    #btn-mobile {
+        display: block;
+    }
+    .aguia-img {
+        width: 500px;
+    }
+}
+
+
+
+
+@media (max-width: 1100px) {
+    .welcome-info h1 {
+        font-size: 40px;
+        line-height: 50px;
+
+    }
+}
+
+
+
+@media (max-width: 1000px) {
+    .welcome {
+        grid-template-columns: 1fr;
+        gap: 50px;
+        text-align: center;
+    }
+    .aguia-img {
+        display: none;
+    }
+
+    .welcome-info ul {
+        justify-content: center;
+    }
+
+}
+
+@media (max-width: 600px) {
+    .welcome {
+        margin-top: 100px;
+    }
+
+    .welcome-info h1 span{
+        font-size: 2rem;
+        
+    }
+
+    .pre-menu {
+        display: none;
+    }
+    .header {
+        height: 80vh;
+    }
+}
+
+@media (max-width: 500px) {
+    .welcome-info-buttons {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .welcome-info-buttons li a {
+        min-width: 150px;
+    }
+}
+
+@media (max-width: 400px) {
+    .welcome-info h1{
+        font-size: 2rem;
+        line-height: 40px;
+        color: var(--primary-color);
+    }
+    .welcome-info h1 span {
+        color: var(--g01);
+        font-size: 1.5rem;
+        
+
+    }
+
+}
+@media (min-width: 1024px) {
+    .header {
+        background-attachment: fixed;
+    }
+
+}

@@ -1,12 +1,7 @@
-@font-face {
-  font-family: "magneto";
-  src: local("../font/magneto-bold.ttf") format("ttf");
-}
 :root {
 
   --font-1: "Red Hat Display", sans-serif;
-  --font-2: "Magneto";
-  --font-3: "Open Sans", sans-serif; 
+  --font-2: "Open Sans", sans-serif;
 
 }
 
@@ -52,22 +47,32 @@
   line-height: 20px;
 }
 
+.caption-3 {
+  font-family: var(--font-2);
+  font-style: italic;
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 19px;
+  letter-spacing: 0.0025em;
+  color: rgba(0, 0, 0, 0.37);
+}
+
 .body-1 {
-  font-family: var(--font-3);
+  font-family: var(--font-2);
   font-weight: 400;
   font-size: 1rem;
   line-height: 22px;
 }
 
 .body-2 {
-  font-family: var(--font-3);
+  font-family: var(--font-2);
   font-weight: 400;
   font-size: 0.875rem;
   line-height: 19px;
 }
 
 .button-font {
-  font-family: var(--font-3);
+  font-family: var(--font-2);
   text-transform: uppercase;
   letter-spacing: 1.25px;
   font-weight: 400;

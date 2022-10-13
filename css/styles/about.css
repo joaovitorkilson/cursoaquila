@@ -160,7 +160,7 @@
 
 }
 
-@media (max-width: 400px) {
+@media (max-width: 450px) {
   .about-img {
     display: none;
   }
@@ -174,4 +174,8 @@
   .about-list li {
     display: list-item !important;
   }
+  .about-list li::before {
+    left: -30px;
+  }
+  
 }

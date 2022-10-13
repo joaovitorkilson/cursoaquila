@@ -1,6 +1,6 @@
 @font-face {
   font-family: "magneto";
-  src: url("../font/magneto-bold.ttf") local("../font/magneto-bold.ttf");
+  src: local("../font/magneto-bold.ttf") format("ttf");
 }
 :root {
 

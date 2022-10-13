@@ -149,7 +149,7 @@
     display: none;
   }
   .about-list {
-    font-size: 18px;
+    font-size: 16px;
   }
   .about-info h3 {
     display: none;
@@ -168,14 +168,11 @@
     font-size: 25px;
     line-height: 36px;
   }
-  .about-list {
-    align-items: start;
-  }
+
   .about-list li {
     display: list-item !important;
+    max-width: 300px;
+    justify-content: center;
+    align-items: center;
   }
-  .about-list li::before {
-    left: -30px;
-  }
-  
 }

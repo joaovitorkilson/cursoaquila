@@ -160,7 +160,6 @@ nav.active li:last-child::after {
 /* Welcome */
 
 .welcome {
-
     max-width: 1340px;
     margin: 0 auto;
     padding-left: 20px;
@@ -229,18 +228,6 @@ nav.active li:last-child::after {
 }
 
 
-
-
-@media (max-width: 1100px) {
-    .welcome-info h1 {
-        font-size: 40px;
-        line-height: 50px;
-
-    }
-}
-
-
-
 @media (max-width: 1000px) {
     .welcome {
         grid-template-columns: 1fr;
@@ -287,8 +274,6 @@ nav.active li:last-child::after {
 
 @media (max-width: 400px) {
     .welcome-info h1{
-        font-size: 2rem;
-        line-height: 40px;
         color: var(--primary-color);
     }
     .welcome-info h1 span {

@@ -1,7 +1,6 @@
 import hamburgerMenu from './global/hamburgerMenu.js'
 
-import whyUsCard from './sections/whyUs.js'
-import menuFood from './sections/menuFood.js'
+import menuCourses from './sections/menuCourses.js'
 
 
 // Global
@@ -9,5 +8,4 @@ hamburgerMenu()
 
 // Sections 
 
-whyUsCard()
-menuFood()
+menuCourses()

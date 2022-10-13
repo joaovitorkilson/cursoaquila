@@ -1,6 +1,7 @@
 
 /* GERAL */
 @import "./components/button.css"; 
+@import "./components/intro.css"; 
 @import "./styles/global.css";
 @import "./utils/colors.css";
 @import "./utils/fonts.css";
@@ -8,6 +9,4 @@
 /* SECTIONS */
 @import "./styles/home.css";
 @import "./styles/about.css";
-@import "./styles/whyus.css";
-@import "./styles/menu.css";
-
+@import "./styles/courses.css";

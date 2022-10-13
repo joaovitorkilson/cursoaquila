@@ -1,0 +1,52 @@
+.title-header {
+  text-align: center;
+}
+.title-header h1 {
+  color: var(--g07);
+  position: relative;
+
+}
+.title-header p {
+  margin-top: 60px;
+  margin-bottom: 60px;
+  color: var(--g08);
+}
+
+.title-header h1::after {
+  content: "";
+  position: absolute;
+  bottom: -20px;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100px;
+  height: 2px;
+  background: var(--primary-color);
+}
+
+@media (max-width: 1450px) {
+  .title-header h1 {
+      font-size: 45px;
+      line-height: 55px;
+
+  }
+}
+@media (max-width: 1100px) {
+  .title-header h1 {
+      font-size: 40px;
+      line-height: 50px;
+
+  }
+}
+@media (max-width: 400px) {
+  .title-header h1{
+      font-size: 2rem;
+      line-height: 40px;
+      
+  }
+
+}
+
+
+

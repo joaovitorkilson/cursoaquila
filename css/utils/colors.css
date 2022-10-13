@@ -1,6 +1,7 @@
 :root {
   --primary-color: #B4984E;
   --background-color: #261900;
+  --secondary-color: #382C00;
 
 
   --bg-transparent: rgba(12, 11, 9, .6);
@@ -14,8 +15,8 @@
   --g07: #717171;
   --g08: #595959;
   --g09: #404040;
-  --g010: #2E2E2E;
-  --g011: #A1A1A1;
-  --g012: #0E0E0E;
+  --g10: #2E2E2E;
+  --g11: #A1A1A1;
+  --g12: #0E0E0E;
 
 }

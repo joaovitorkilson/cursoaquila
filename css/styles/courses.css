@@ -1,0 +1,119 @@
+.courses-container {
+  max-width: 1340px;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  align-items: center;
+}
+
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  align-items: center;
+}
+.card {
+  background: var(--g02);
+  border-radius: 5px;
+  padding: 60px 50px 50px 50px;
+  box-shadow: 0px 4px 15px 2px rgba(0, 0, 0, 0.25);
+  display: none;
+  
+}
+
+.card p {
+  padding-top: 50px;
+  padding-bottom: 40px;
+  
+}
+.card-content h2 {
+  position: relative;
+  color: var(--g10);
+}
+.card-content a {
+  color: var(--secondary-color);
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.card-content h2::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  width: 100px;
+  height: 2px;
+  background: var(--primary-color);
+}
+.card-image {
+  width: 50px;
+  margin-bottom: 20px;
+}
+.card-image img {
+  width: 100%;
+  display: block;
+}
+.img-enem {
+  margin-bottom: 50px;
+}
+
+.courses-filter ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+  gap: 30px;
+}
+.courses-filter li {
+  color: var(--secondary-color);
+  cursor: pointer;
+  transition: .3s;
+}
+.courses-filter li:hover {
+  color: var(--primary-color);
+}
+#concursos {
+  white-space: nowrap;
+}
+
+.active-item {
+  display: inline-block;
+}
+.activeButton {
+  color: var(--primary-color) !important;
+}
+
+@media (max-width: 1200px) {
+  .cards-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 800px) {
+  .cards-container {
+    grid-template-columns: 1fr;
+  }
+
+}
+  
+@media (max-width: 600px) {
+  .cards-container {
+    padding: 10px;
+    display: flex;
+    overflow-x: scroll;
+  }
+  .card {
+    min-width: 250px;
+    box-shadow: 0px 4px 5px 2px rgba(0, 0, 0, 0.25);
+
+  }
+}
+
+@media (max-width: 450px) {
+  .courses-filter ul {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+  }
+}

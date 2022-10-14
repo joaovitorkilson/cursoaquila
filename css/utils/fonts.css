@@ -57,6 +57,16 @@
   color: rgba(0, 0, 0, 0.37);
 }
 
+.caption-4 {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  letter-spacing: 0.0025em;
+  color: var(--g07);
+}
+
 .body-1 {
   font-family: var(--font-2);
   font-weight: 400;

@@ -24,7 +24,9 @@
   height: 2px;
   background: var(--primary-color);
 }
-
+.emphasis {
+  color: var(--primary-color);
+}
 @media (max-width: 1450px) {
   .title-header h1 {
       font-size: 45px;

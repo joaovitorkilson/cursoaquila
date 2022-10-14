@@ -1,0 +1,23 @@
+{
+  "name": "site",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joaovitorkilson/cursoaquila.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/joaovitorkilson/cursoaquila/issues"
+  },
+  "homepage": "https://github.com/joaovitorkilson/cursoaquila#readme",
+  "dependencies": {
+    "photoswipe": "^5.3.2"
+  }
+}

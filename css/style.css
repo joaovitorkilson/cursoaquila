@@ -9,5 +9,8 @@
 /* SECTIONS */
 @import "./styles/home.css";
 @import "./styles/about.css";
+@import "./styles/galery.css";
 @import "./styles/team.css";
 @import "./styles/courses.css";
+
+@import "components/photoswipe.css";

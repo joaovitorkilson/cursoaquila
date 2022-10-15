@@ -1,0 +1,101 @@
+.partnership {
+  background: var(--g01);
+}
+
+.partnership-container {
+  max-width: 1340px;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+}
+.detail {
+  color: var(--primary-color);
+}
+
+.partnership-info {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+.unica-description {
+  max-width: 500px;
+  color: var(--g08);
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.unica-description-list {
+  list-style: none;
+
+
+
+}
+
+.unica-description-list li {
+  margin-bottom: 30px;
+  padding-left: 50px;
+  position: relative;
+
+}
+
+.unica-description-list li::before {
+  content: "";
+  background-image: url("../../img/home/check.svg");
+  width: 36px;
+  height: 36px;
+  position: absolute;
+  top: -5px;
+  left: 0px;
+}
+.btn-unica {
+  width: fit-content;
+  background: var(--primary-color);
+  text-decoration: none;
+  color: var(--secondary-color);
+}
+
+.btn-unica:hover {
+  background: var(--g01);
+}
+
+.unica-img {
+  width: 630px;
+}
+.unica-img img{
+  width: 100%;
+  display: block;
+}
+
+@media (max-width: 1000px) {
+  .partnership-info {
+    justify-items: center;
+    grid-template-columns: 1fr;
+
+  }
+  .btn-unica {
+    place-self: center;
+  }
+}
+@media (max-width: 750px) {
+  .unica-img {
+    width: 400px;
+  }
+  .unica-description {
+    min-width: 300px;
+
+  }
+  
+}
+@media (max-width: 500px) {
+  .unica-img {
+    width: 200px;
+  }
+  .unica-description {
+    min-width: 200px;
+
+  }
+}

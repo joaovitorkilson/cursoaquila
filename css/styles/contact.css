@@ -1,0 +1,161 @@
+.contact {
+  background: var(--g01);
+  display: flex;
+
+}
+
+.contact-container {
+  max-width: 1340px;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+}
+.contact-form {
+  display: inline-block;
+}
+
+.contact-form-list {
+  display: grid;
+  grid-template-columns: 400px 1fr;
+  gap: 30px;
+
+}
+
+.contact-map {
+  border: none;
+  border-radius: 5px;
+  width: 1300px;
+  height: 230px;
+}
+
+.contact-list {
+  display: flex;
+  flex-direction: column;
+  margin: 50px 0;
+  gap: 50px;
+}
+
+.contact-info {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.contact-info-data dt{
+  margin-bottom: 10px;
+  
+}
+
+.contact-icon {
+  background: var(--background-color);
+  padding: 15px;
+  border-radius: 5px;
+}
+
+#form {
+  grid-column: 2;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  align-content: center;
+  margin: 50px 0;
+
+}
+
+#name, #email {
+  height: 60px;
+  border-radius: 5px;
+  border: 1px solid var(--background-color);
+
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+#name {
+  grid-column: 1;
+}
+
+
+
+#email {
+  grid-column: 2;
+}
+
+#subject, 
+#text {
+  grid-column: 1 / 3;
+  height: 60px;
+  border: 1px solid var(--background-color);
+  border-radius: 5px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+#text {
+  height: 120px;
+}
+
+#name:focus,
+#email:focus,
+#subject:focus,
+#text:focus {
+  outline: none;
+  border-color: var(--primary-color);
+  background: #fff;
+  box-shadow: 0 0 0 2px #caa643;
+}
+
+.btn-form {
+  background: var(--primary-color);
+  width: fit-content;
+}
+.btn-form:hover{
+  background: var(--g01);
+  color: var(--secondary-color);
+  cursor: pointer;
+}
+
+@media (max-width: 1400px) {
+  .contact-map {
+    width: 100%;
+    height: 230px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .contact-form-list {
+    display: flex;
+  }
+}
+
+@media (max-width: 810px) {
+  .contact-form-list {
+    flex-direction: column;
+  }
+  .contact-form {
+    margin: 0 auto;
+  }
+  .contact-container {
+    display: flex;
+    flex-direction: column;
+
+  }
+}
+
+@media (max-width: 550px) {
+
+  #form {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+  }
+  .contact-info {
+    gap: 20px;
+  }
+  .contact-list {
+    margin: 30px 0;
+  }
+}

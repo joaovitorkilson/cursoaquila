@@ -1,5 +1,6 @@
 .questions{
   background: var(--background-color);
+  position: relative;
 }
 
 .questions-container {
@@ -8,8 +9,7 @@
   padding-left: 20px;
   padding-right: 20px;
   padding-top: 60px;
-  padding-bottom: 60px;
-
+  padding-bottom: 120px;
 }
 
 .questions-title h1 {
@@ -49,6 +49,11 @@
   gap: 30px;
 
 }
+.questions-column {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
 .question-card {
   background: var(--g10);
   padding: 30px;
@@ -76,7 +81,7 @@ h5 {
   cursor: pointer;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 900px) {
   .questions-grid {
     grid-template-columns: 1fr;
     align-items: end;

@@ -16,5 +16,6 @@
 @import "./styles/partnership.css";
 @import "./styles/contact.css";
 @import "./styles/courses.css";
+@import "./styles/footer.css";
 
 @import "components/photoswipe.css";

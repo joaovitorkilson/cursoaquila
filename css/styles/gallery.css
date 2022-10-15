@@ -11,15 +11,23 @@
   padding-bottom: 60px;
 
 }
-.galllery-header {
+.gallery-header h1{
   color: var(--g01) !important;
+}
+.gallery-header p {
+  color: var(--g06);
 }
 
 .gallery-img {
   width: 400px;
   border-radius: 5px;
-  
+  transition: .3s;
 }
+
+.gallery-img:hover {
+  transform: scale(1.03);
+}
+
 .pswp-gallery {
   display: flex;
   flex-wrap: wrap;

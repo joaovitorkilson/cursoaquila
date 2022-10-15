@@ -4,6 +4,9 @@ import menuCourses from './sections/menuCourses.js'
 
 import gallery from './sections/gallery.js'
 
+import questionCard from './sections/questions.js'
+
+
 // Global
 hamburgerMenu()
 
@@ -11,3 +14,4 @@ hamburgerMenu()
 
 menuCourses()
 gallery()
+questionCard()

@@ -81,6 +81,15 @@
   line-height: 19px;
 }
 
+.dt-id {
+  font-family: 'Open Sans';
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+  color: var(--primary-color);
+}
+
+
 .button-font {
   font-family: var(--font-2);
   text-transform: uppercase;

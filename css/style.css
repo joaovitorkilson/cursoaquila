@@ -12,6 +12,7 @@
 @import "./styles/gallery.css";
 @import "./styles/team.css";
 @import "./styles/testimonial.css";
+@import "./styles/questions.css";
 @import "./styles/courses.css";
 
 @import "components/photoswipe.css";

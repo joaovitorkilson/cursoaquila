@@ -1,0 +1,97 @@
+.about-us-content {
+  background: var(--g01);
+}
+.about-us-content-container {
+  max-width: 1340px;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 160px;
+  padding-bottom: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 60px;
+}
+.about-us {
+  background: var(--background-color);
+}
+
+.title-about-us {
+  text-align: center;
+}
+
+.text-about-us-container {
+  max-width: 75ch;
+  color: var(--g08);
+}
+.text-about-us-container p {
+  margin-bottom: 20px;
+}
+
+#menu-container-about {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 5;
+  background: var(--background-color);
+}
+
+
+
+.img-about-us-container img{
+  display: block;
+  width: 100%;
+}
+
+.img-aguia-about-us {
+  width: 500px;
+}
+
+.img-title-about-us {
+  width: 700px;
+}
+
+@media (max-width: 800px) {
+  .img-aguia-about-us {
+    width: 300px;
+  }
+  
+  .img-title-about-us {
+    width: 500px;
+  }
+}
+
+@media (max-width: 550px) {
+  .img-aguia-about-us {
+    width: 80vw;
+  }
+  
+  .img-title-about-us {
+    width: 400px;
+  }
+
+  .title-about-us h2 {
+    font-size: 28px;
+  }
+}
+@media (max-width: 450px) {
+
+  
+  .img-title-about-us {
+    margin: 0 auto;
+    width: 300px;
+  }
+}
+
+@media (max-width: 350px) {
+
+  .img-title-about-us {
+    width: 250px;
+  }
+  .title-about-us h2 {
+    font-size: 18px;
+  }
+
+}

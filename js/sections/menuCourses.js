@@ -128,8 +128,5 @@ export default function menuCourses() {
   buttonVestibular.addEventListener('click', handleVestibularButton)
   buttonAll.addEventListener('click', handleButtonAll)
 
-
-
-
 }
 

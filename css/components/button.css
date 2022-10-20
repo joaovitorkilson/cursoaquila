@@ -32,6 +32,9 @@
     background: transparent;
     color: black;
 }
+.btn-ver-mais-sobre:hover {
+    color: var(--g01);
+}
 .div-btn-ver-mais {
     display: flex;
     justify-content: center;

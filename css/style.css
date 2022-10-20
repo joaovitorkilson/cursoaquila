@@ -18,4 +18,9 @@
 @import "./styles/courses.css";
 @import "./styles/footer.css";
 
+/* PAGES */
+
+@import "./styles/about-page.css";
+
+
 @import "components/photoswipe.css";

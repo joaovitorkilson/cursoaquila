@@ -4,10 +4,9 @@ export default function scrollSuave() {
   
   const linksInternosMenu = document.querySelectorAll('.js-menu ul a[href^="#"]')
   const contactButton = document.querySelector('#contact-button')
-  const contactButtonWelcome = document.querySelector('#contact-button-welcome')
   const contactButtonOurCourses = document.querySelector('#our-courses')
   const upperButton = document.querySelector('#upper-button')
-  const linksInternos = [...linksInternosMenu, contactButton, contactButtonWelcome, contactButtonOurCourses, upperButton]
+  const linksInternos = [...linksInternosMenu, contactButton, contactButtonOurCourses, upperButton]
   function removeColor() {
     linksInternos.forEach(link => {
       link.classList.remove('menu-item-active')

@@ -34,9 +34,6 @@
   gap: 30px;
   justify-content: center;
 }
-.pswp-gallery a {
-  height: 300px;
-}
 
 @media (max-width: 900px) {
   .gallery-img {

@@ -26,9 +26,15 @@
     position: fixed;
     right: 20px;
     bottom: 10px;
-    z-index: 9999;
+    z-index: 10;
 }
 
+#whatsapp-button {
+    position: fixed;
+    right: 20px;
+    bottom: 60px;
+    z-index: 11;
+}
 
 .contact-pre-menu {
     display: flex;
@@ -36,7 +42,8 @@
 
 }
 
-.contact-pre-menu p {
+.contact-pre-menu p,
+.contact-pre-menu a {
     padding-left: 30px;
     position: relative;
     display: flex;
@@ -44,15 +51,21 @@
     color: var(--g01);
 }
 
-.number::before {
+/* .number::before {
     content: '';
-    background-image: url("../../img/home/iphone.svg");
-    width: 23px;
+    background-image: url("../../img/home/whatsapp-s.svg");
+    background-repeat: no-repeat;
+    width: 24px;
     height: 24px;
     position: absolute;
     left: 0;
+} */
+.number {
+    text-decoration: none;
+    display: flex;
+    gap: 5px;
+    align-items: center;
 }
-
 .hours::before {
     content: '';
     background-image: url("../../img/home/clock.svg");
@@ -289,23 +302,28 @@ nav.active li:last-child::after {
     .welcome-info-buttons li a {
         min-width: 150px;
     }
-    .nossos-cursos {
-        display: none;
-    }
+
 }
 
 @media (max-width: 400px) {
     .welcome-info h1{
         color: var(--primary-color);
+        font-size: 38px;
     }
     .welcome-info h1 span {
         color: var(--g01);
-        font-size: 1.5rem;
+        font-size: 20px;
         
-
     }
-
+    .welcome-info p {
+        font-size: 1rem;
+    }
+    #contact-button-welcome {
+    display: none;
+    }
 }
+
+
 @media (min-width: 1024px) {
     .header {
         background-attachment: fixed;

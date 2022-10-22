@@ -51,15 +51,6 @@
     color: var(--g01);
 }
 
-/* .number::before {
-    content: '';
-    background-image: url("../../img/home/whatsapp-s.svg");
-    background-repeat: no-repeat;
-    width: 24px;
-    height: 24px;
-    position: absolute;
-    left: 0;
-} */
 .number {
     text-decoration: none;
     display: flex;

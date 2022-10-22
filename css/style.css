@@ -21,6 +21,7 @@
 /* PAGES */
 
 @import "./styles/about-page.css";
+@import "./styles/course-page.css";
 
 
 @import "components/photoswipe.css";

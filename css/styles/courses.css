@@ -36,6 +36,10 @@
   color: var(--secondary-color);
   text-decoration: none;
   font-size: 18px;
+  transition: .3s;
+}
+.card-content a:hover {
+  color: var(--primary-color);
 }
 
 .card-content h2::after {

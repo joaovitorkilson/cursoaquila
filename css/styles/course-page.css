@@ -1,0 +1,199 @@
+.course {
+  background: var(--g01);
+}
+
+#menu-container-course {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 5;
+  background: var(--background-color);
+}
+
+.course-container {
+  max-width: 1340px;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 160px;
+  padding-bottom: 80px;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  position: relative !important;
+}
+
+.course-info-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.title-course {
+  color: var(--g07);
+  position: relative;
+}
+.title-course::after {
+  content: "";
+  position: absolute;
+  bottom: -20px;
+  left: 0;
+  right: 0;
+  width: 100px;
+  height: 2px;
+  background: var(--primary-color);
+}
+.course-description {
+  color: var(--g09);
+  margin-top: 60px;
+  max-width: 75ch;
+}
+
+.course-img {
+  width: 400px;
+}
+
+.course-img img {
+  display: block;
+  width: 100%;
+}
+.course-cards-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+.course-card {
+  color: var(--g01);
+  background: var(--background-color);
+  padding: 50px;
+  border-radius: 5px;
+  min-width: 400px;
+  box-sizing: border-box;
+}
+
+.card-titulo-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 60px;
+}
+
+.color-font {
+  color: var(--g06);
+}
+.color-font-p {
+  color: var(--g01);
+}
+.card-titulo {
+
+  position: relative;
+}
+
+.card-titulo::after {
+  content: "";
+  position: absolute;
+  bottom: -20px;
+  left: 0;
+  right: 0;
+  width: 100px;
+  height: 2px;
+  background: var(--primary-color);
+}
+
+.data-exame, .banca-exame, .turmas-exame {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 300px;
+}
+
+.materias-list {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding-left: 15px;
+}
+.data-list-card {
+  padding-left: 20px;
+}
+
+.button-contact-course {
+  margin: 0 auto;
+}
+
+
+
+
+
+
+
+@media (max-width: 1450px) {
+  .title-course {
+      font-size: 45px;
+      line-height: 55px;
+
+  }
+}
+
+
+@media (max-width: 1400px) {
+  .course-cards-container {
+    overflow-x: scroll;
+  }
+}
+
+@media (max-width: 1100px) {
+  .title-course {
+      font-size: 40px;
+      line-height: 50px;
+
+  }
+}
+@media (max-width: 750px) {
+  .course-img {
+    display: none;
+  }
+}
+@media (max-width: 500px) {
+  .course-cards-container {
+    display: flex;
+    flex-direction: column;
+    overflow-x: auto;
+
+  }
+  .course-card {
+    padding: 40px;
+    min-width: 200px;
+    
+  }
+  .card-titulo-container img{
+    display: none;
+  }
+
+  
+}
+@media (max-width: 400px) {
+  .title-course {
+      font-size: 2rem;
+      line-height: 40px;
+      
+  }
+  .card-titulo {
+    font-size: 2rem;
+  }
+  .data-exame h3,
+  .banca-exame h3,
+  .turmas-exame h3 {
+    font-size: 1.3rem;
+  }
+  .turmas-exame p {
+    font-size: 1rem;
+  }
+  .data-list-card {
+    list-style: none;
+    padding: 0;
+    margin-top: 15px;
+  }
+
+}

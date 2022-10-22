@@ -10,10 +10,12 @@
       if (position > 300) {
 
         menuHeader.classList.add('fixed-top')
+        menuHeader.style.borderBottom = "1px solid #b4984e"
 
       } else {
 
         menuHeader.classList.remove('fixed-top')
+        menuHeader.style.borderBottom = ""
       }
     }
 

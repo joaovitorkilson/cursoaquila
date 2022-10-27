@@ -48,6 +48,9 @@
   margin-bottom: 10px;
   
 }
+.contact-info-data dd {
+  margin-bottom: 5px;
+}
 
 .contact-icon {
   background: var(--background-color);

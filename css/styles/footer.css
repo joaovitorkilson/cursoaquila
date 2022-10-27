@@ -68,10 +68,7 @@
   color: var(--g01);
 }
 
-.cursos ul {
-  min-width: 100px;
-  margin-top: 20px;
-}
+
 
 .horario {
   display: flex;

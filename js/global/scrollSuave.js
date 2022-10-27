@@ -2,13 +2,10 @@
 
 export default function scrollSuave() {
   
-  const linksInternosMenu = document.querySelectorAll('.js-menu ul a[href^="#"]')
-  const contactButton = document.querySelector('#contact-button')
-  const contactButtonOurCourses = document.querySelector('#our-courses')
-  const upperButton = document.querySelector('#upper-button')
-  const linksInternos = [...linksInternosMenu, contactButton, contactButtonOurCourses, upperButton]
+  const linksInternosMenu = document.querySelectorAll('a[href^="#"]')
+
   function removeColor() {
-    linksInternos.forEach(link => {
+    linksInternosMenu.forEach(link => {
       link.classList.remove('menu-item-active')
     })
   }
@@ -16,7 +13,9 @@ export default function scrollSuave() {
   function scrollToSection(event) {
     removeColor()
     event.preventDefault()
-    event.currentTarget.classList.add('menu-item-active')
+    if (event.currentTarget.classList.contains('item-menu-top')) {
+      event.currentTarget.classList.add('menu-item-active')
+    }
     const href = event.currentTarget.getAttribute('href')
     const section = document.querySelector(href)
     const top = section.offsetTop
@@ -29,7 +28,7 @@ export default function scrollSuave() {
   }
 
 
-  linksInternos.forEach(link => {
+  linksInternosMenu.forEach(link => {
     link.addEventListener('click', scrollToSection)
   })
 

@@ -5,18 +5,20 @@ export default function menuCourses() {
   const buttonPolicia = document.querySelector('[data-button="policia"]')
   const buttonConcurso = document.querySelector('[data-button="concurso"]')
   const buttonVestibular = document.querySelector('[data-button="vestibular"]')
+  const buttonCursos = document.querySelector('[data-button="cursos"]')
 
-  const allButtons = [buttonMilitar, buttonPolicia, buttonConcurso, buttonVestibular]
+  const allButtons = [buttonMilitar, buttonPolicia, buttonConcurso, buttonVestibular, buttonCursos]
 
   // Categories
   const militar = document.querySelectorAll('.militar')
   const policia = document.querySelectorAll('.policia')
   const concurso = document.querySelectorAll('.concurso')
   const vestibular = document.querySelectorAll('.vestibular')
+  const cursos = document.querySelectorAll('.cursos')
 
  
   
-  const allItems = [militar, policia, concurso, vestibular]
+  const allItems = [militar, policia, concurso, vestibular, cursos]
 
 
   // Active all items
@@ -121,11 +123,33 @@ export default function menuCourses() {
       }) 
     }
 
+       // Cursos Button
+       function handleCursosButton() {
+
+        allButtons.forEach(item => {
+          item.classList.remove('activeButton')
+        })
+    
+        allButtons[4].classList.add('activeButton')
+    
+        allItems.forEach(item => {
+          item.forEach(element => {
+            element.classList.remove('active-item')
+          })
+        })
+    
+        cursos.forEach(item => {
+          item.classList.add('active-item')
+        }) 
+      }
+  
+
 
   buttonMilitar.addEventListener('click', handleMilitarButton)
   buttonPolicia.addEventListener('click', handlePoliciaButton)
   buttonConcurso.addEventListener('click', handleConcursoButton)
   buttonVestibular.addEventListener('click', handleVestibularButton)
+  buttonCursos.addEventListener('click', handleCursosButton)
   buttonAll.addEventListener('click', handleButtonAll)
 
 }

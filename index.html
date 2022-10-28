@@ -10,7 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Red+Hat+Display:wght@400;500;700&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="./css/style.css" />
-
+    <link rel="canonical" href="https://aquilacursobq.com.br">
     <title>Curso Áquila | Preparando Vencedores</title>
   </head>
   <body id="body">
@@ -319,7 +319,7 @@
               </div>
 
               <div class="team-card-info">
-                <h4 class="caption-1">Marisol Iandreto</h3>
+                <h4 class="caption-1">Marisol Andreto</h3>
                 <p class="caption-3">Professora de Matemática</p>
               </div>
 
@@ -378,6 +378,25 @@
               <div class="team-card-info">
                 <h4 class="caption-1">Reginaldo Maria da Silva</h3>
                 <p class="caption-3">Professor de Matemática</p>
+              </div>
+
+              <div class="team-card-social">
+                <ul>
+                  
+                  <li><a href="https://www.instagram.com/re_concursos/" target="_blank"><img src="img/team-cards/insta.svg" alt="email logo"></a></li>
+                </ul>
+              </div>
+              
+            </div>
+
+            <div class="team-card">
+              <div class="team-card-img">
+                <img src="img/team-cards/ricardo.png" alt="Professores">
+              </div>
+
+              <div class="team-card-info">
+                <h4 class="caption-1">Ricardo Rodrigues</h3>
+                <p class="caption-3">Professor de biologia e ciências da natureza</p>
               </div>
 
               <div class="team-card-social">
@@ -516,7 +535,7 @@
                       <h5 class="caption-4">Aprovada EEAR</h5>
                     </div>
                   </div>
-                  <p class="body-2">O único lugar onde o sucesso vem antes do trabalho é no <span class="detail">dicionário!</span> </p>
+                  <p class="body-2">O único lugar onde o sucesso vem antes do trabalho é no dicionário! </p>
                 </li>
 
                 <li class="testimonial-card">
@@ -529,7 +548,7 @@
                       <h5 class="caption-4">Aprovada EEAR</h5>
                     </div>
                   </div>
-                  <p class="body-2">O único lugar onde o sucesso vem antes do trabalho é no <span class="detail">dicionário!</span> </p>
+                  <p class="body-2">O único lugar onde o sucesso vem antes do trabalho é no dicionário! </p>
                 </li>
                 
                 <li class="testimonial-card">
@@ -542,7 +561,7 @@
                       <h5 class="caption-4">Aprovada EEAR</h5>
                     </div>
                   </div>
-                  <p class="body-2">O único lugar onde o sucesso vem antes do trabalho é no <span class="detail">dicionário!</span> </p>
+                  <p class="body-2">O único lugar onde o sucesso vem antes do trabalho é no dicionário!</p>
                 </li>
               </ul>
           </div>
@@ -638,31 +657,31 @@
                   <div class="contact-icon">
                     <img src="img/contact/location.svg">
                   </div>
-                  <div class="contact-info-data">
+                  <dl class="contact-info-data">
                     <dt class="font-contact-dt">
                       <h4>Endereço:</h4>
                     </dt>
                     <dd class="font-contact-dd">Rua Felipe Paulo Curi, 40A - Centro - Barbacena/MG</dd>  
-                  </div>
+                  </dl>
                 </div>
 
                 <div class="contact-info">
                   <div class="contact-icon">
                     <img src="img/contact/message.svg">
                   </div>
-                  <div class="contact-info-data">
+                  <dl class="contact-info-data">
                     <dt class="font-contact-dt">
                       <h4>Email:</h4>
                     </dt>
                     <dd><a href="mailto:cursoaquila@gmail.com"  class="font-contact-dd">cursoaquila@gmail.com</a></dd>  
-                  </div>
+                  </dl>
                 </div>
 
                 <div class="contact-info">
                   <div class="contact-icon">
                     <img src="img/contact/mobile.svg">
                   </div>
-                  <div class="contact-info-data">
+                  <dl class="contact-info-data">
                     <dt class="font-contact-dt">
                       <h4>Telefone:</h4>
                     </dt>
@@ -672,22 +691,23 @@
                     <dd>
                       <a href="tel:(32) 987121759"  class="font-contact-dd">(32) 987121759</a>
                     </dd>  
-                  </div>
+                  </dl>
                 </div>
               </dl>
 
           
-                <form action="" method="post" id="form">
+                <form action="./enviar.php" method="post" id="form">
 
                   
-                  <input type="text" id="name" placeholder="Seu Nome" class="caption-2">
+                  <input type="text" id="name" name="nome" placeholder="Seu Nome" class="caption-2">
                   <input type="email" name="email" id="email" placeholder="Seu Email"  class="caption-2">
-                  <input type="text" id="subject" placeholder="Assunto"  class="caption-2">
+                  <input type="text" name="assunto" id="subject" placeholder="Assunto"  class="caption-2">
 
                   <textarea name="message" id="text" placeholder="Mensagem" rows="10" class="caption-2"></textarea>
 
 
-              <input type="submit" value="ENVIAR" class="btn btn-form button-font ">
+              
+              <button class="btn btn-form button-font">Enviar</button>
             </form>
            
 

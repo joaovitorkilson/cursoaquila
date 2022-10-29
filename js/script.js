@@ -10,14 +10,13 @@ import scrollSuave from './global/scrollSuave.js'
 
 import effects from './global/effects.js'
 
-import formularioJS from './global/form.js'
 
 
 // Global
 hamburgerMenu()
 scrollSuave()
 effects()
-formularioJS()
+
 // Sections 
 
 menuCourses()

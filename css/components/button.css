@@ -40,3 +40,9 @@
     justify-content: center;
     
 }
+
+#btn-cards-courses {
+    display: block;
+    margin: 60px auto 0 auto;
+
+}

@@ -17,16 +17,14 @@ export default function menuCourses() {
   const cursos = document.querySelectorAll('.cursos')
 
  
-  
+  // active just the military courses
   const allItems = [militar, policia, concurso, vestibular, cursos]
+  allButtons[0].classList.add('activeButton')
+  allItems[0].forEach(item => {
+    item.classList.add('active-item')
+  })
 
 
-  // Active all items
-    allItems.forEach((item) => {
-      item.forEach(element => {
-        element.classList.add('active-item')
-      })
-    })
 
   // All Button
   function handleButtonAll() {

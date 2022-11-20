@@ -1,10 +1,30 @@
 /* Header */
 
+
 .header {
-    background: url("../../img/home/bg.jpg") top center;
-    background-size: cover;
-    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    
+
 }
+
+#img-background picture {
+
+    height: 100vh;
+    width: 100vw;
+    
+}
+
+#img-background picture img {
+    object-fit: cover;
+    max-width: 100%;
+    width: 100vw;
+    height: 100vh;
+    display: block;
+}
+
 
 .name {
     white-space: nowrap;
@@ -15,11 +35,15 @@
     margin: 0 auto;
     padding-left: 20px;
     padding-right: 20px;
+
 }
+
 
 .pre-menu {
     padding-top: 20px;
     padding-bottom: 20px;
+    
+    
 }
 
 #upper-button {
@@ -110,6 +134,24 @@
     
 }
 
+@keyframes slideDown {
+    from {
+        transform: translate3d(0, -20px, 0);
+    } to {
+        transform: translate3d(0, 0px, 0);
+
+    }
+}
+
+
+.open-anime-menubar {
+    animation: slideDown forwards .3s;
+    
+    
+}
+
+
+
 .menu-item-active {
     color: var(--primary-color) !important;
 }
@@ -182,12 +224,13 @@ nav.active li:last-child::after {
 .welcome {
     padding-right: 20px;
     padding-left: 20px;
-
+    height: 70vh;
+    display: flex;
+    justify-content: space-around;
 }
 .welcome-container {
-    
+    display: flex;
     max-width: 1340px;
-    margin: 200px auto 80px auto;
     place-self: center;
     display: grid;
     grid-template-columns: 2fr 1fr;

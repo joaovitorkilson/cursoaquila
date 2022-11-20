@@ -15,14 +15,22 @@
   align-items: center;
 }
 .card {
+  max-width: 410px !important;
+  max-height: 380px !important;
   background: var(--g02);
   border-radius: 5px;
   padding: 60px 50px 50px 50px;
   box-shadow: 0px 4px 15px 2px rgba(0, 0, 0, 0.25);
-  display: none;
-  
+  transition: .3s;
 }
 
+.card:hover {
+  transform: scale(1.03);
+}
+
+.js .card-opacity {
+  display: none;
+}
 .card p {
   padding-top: 50px;
   padding-bottom: 40px;
@@ -62,29 +70,35 @@
 .img-enem {
   margin-bottom: 50px;
 }
+.courses-filter {
+  display: none;
+}
 
-.courses-filter ul {
+.js .courses-filter {
+  display: block;
+}
+.js .courses-filter ul {
   list-style: none;
   display: flex;
   justify-content: center;
   margin-bottom: 50px;
   gap: 30px;
 }
-.courses-filter li {
+.js .courses-filter li {
   color: var(--secondary-color);
   padding-top: 5px;
   padding-bottom: 5px;
   cursor: pointer;
   transition: .3s;
 }
-.courses-filter li:hover {
+.js .courses-filter li:hover {
   color: var(--primary-color);
 }
 #concursos {
   white-space: nowrap;
 }
 
-.active-item {
+.js .active-item {
   display: inline-block;
 }
 .activeButton {
@@ -96,14 +110,12 @@
     grid-template-columns: repeat(2, 1fr);
   }
 }
+
+  
 @media (max-width: 800px) {
   .cards-container {
     grid-template-columns: 1fr;
   }
-
-}
-  
-@media (max-width: 600px) {
   .cards-container {
     padding: 10px;
     display: flex;
@@ -116,7 +128,7 @@
   }
 }
 
-@media (max-width: 450px) {
+@media (max-width: 500px) {
   .courses-filter ul {
     flex-direction: column;
     text-align: center;

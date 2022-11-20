@@ -49,6 +49,7 @@
   color: var(--g09);
   margin-top: 60px;
   max-width: 75ch;
+  text-indent: 20px;
 }
 
 .course-img {

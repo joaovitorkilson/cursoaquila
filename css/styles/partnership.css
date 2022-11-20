@@ -59,8 +59,19 @@
   background: var(--g01);
 }
 
+.unica-img-video {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+}
+.unica-img-video iframe {
+  border-radius: 5px;
+  width: 560px;
+  height: 315px;
+}
 .unica-img {
-  width: 630px;
+  width: 560px;
   transition: .3s;
 }
 .unica-img:hover {
@@ -83,9 +94,10 @@
   }
 }
 @media (max-width: 750px) {
-  .unica-img {
+  .unica-img, .unica-img-video iframe {
     width: 400px;
   }
+
   .unica-description {
     min-width: 300px;
 
@@ -96,8 +108,21 @@
   .unica-img {
     width: 200px;
   }
+  .unica-img-video {
+    align-items: center;
+  }
+  .unica-img-video iframe {
+    width: 300px;
+    height: auto;
+  }
   .unica-description {
     min-width: 200px;
 
+  }
+}
+
+@media (max-width: 350px) {
+  .unica-img-video iframe {
+    width: 200px;
   }
 }

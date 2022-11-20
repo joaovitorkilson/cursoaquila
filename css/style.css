@@ -24,4 +24,6 @@
 @import "./styles/course-page.css";
 
 
+/* PLUGINS */
 @import "components/photoswipe.css";
+@import "./utils/animation.css";

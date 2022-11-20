@@ -13,6 +13,9 @@
 
     <link rel="stylesheet" href="../css/style.css" />
     <title>Curso Áquila | TJMG</title>
+    <script>
+      document.documentElement.classList.add("js");
+    </script>
   </head>
   <body>
     <header>
@@ -29,9 +32,9 @@
                   <li><a href="../index.html#sobre">Sobre Nós</a></li>
                   <li><a href="../index.html#equipe">Professores</a></li>
                   <li><a href="../index.html#galeria">Galeria</a></li>
-                  <li><a href="../index.html#depoimentos">Depoimentos</a></li>
+                  <!-- <li><a class="item-menu-top" href="#depoimentos">Depoimentos</a></li> -->
                   <li><a href="../index.html#perguntas">Perguntas</a></li>
-                  <li><a href="../index.html#parcerias">Parcerias</a></li>
+                  <li><a href="../index.html#parceria">Parceria</a></li>
                 </ul>
               </nav>
               <a
@@ -51,31 +54,30 @@
         <div class="course-container">
           <div class="course-info-header">
             <div class="course-info-header-content">
-              <h1 class="title-1 title-course">
+              <h1 class="title-1 title-course fadeInDown" data-anime="400">
                 Curso Preparatório <span class="detail">TJMG</span>
               </h1>
-              <p class="body-1 course-description">
-                O Tribunal de Justiça de Minas Gerais publicou o Edital 1/2022
-                para provimento de vagas existentes e formação de cadastro de
-                reserva para cargos efetivos do quadro de pessoal dos servidores
-                do Poder Judiciário. O concurso é destinado ao provimento de
-                vagas existentes, por cargo/especialidade, discriminadas por
-                unidade, e a formação de cadastro de reserva para provimento de
-                vagas que vierem a surgir e que não forem preenchidas por
-                remoção ou reversão, durante o prazo de validade do certame, dos
-                cargos efetivos de oficial judiciário e analista judiciário.
+              <p class="body-1 course-description fadeInDown" data-anime="600">
+                As atribuições jurisdicionais do Tribunal de Justiça estão
+                determinadas na Constituição do Estado de Minas Gerais. Entre
+                essas atribuições, destacam-se a competência originária para
+                julgamento do Vice-Governador, Deputados Estaduais,
+                Procurador-Geral de Justiça e Secretários de Estado, nos crimes
+                comuns, mandado de segurança contra ato do Governador e do
+                Presidente da Assembleia Legislativa e ação direta de
+                inconstitucionalidade de lei ou ato normativo estaduais.
               </p>
             </div>
-            <div class="course-img">
+            <div class="course-img fadeInRight" data-anime="400">
               <img src="../img/course/aocp.png" alt="inep logo" />
             </div>
           </div>
 
           <div class="course-cards-container">
-            <div class="course-card">
+            <div class="course-card fadeInLeft" data-anime="400">
               <div class="card-titulo-container">
                 <h2 class="card-titulo color-font title-3">Informações</h2>
-                <img src="../img/course/card/list.svg" alt="">
+                <img src="../img/course/card/list.svg" alt="" />
               </div>
 
               <div class="materias-exame">
@@ -84,14 +86,16 @@
                   <li>Documento de identidade.</li>
                   <li>CPF ou similar com foto.</li>
                   <li>Comprovante de residência.</li>
-                  <li>Fotos 3x4 (se necessário duas para cursos técnicos).</li>
-                  <li>Se menor de idade, cópia da identidade ou similar do representante legal.</li>
+                  <li>Foto 3x4 (se necessário duas para cursos técnicos).</li>
+                  <li>
+                    Se menor de idade, cópia da identidade ou similar do
+                    representante legal.
+                  </li>
                 </ol>
               </div>
-              
             </div>
 
-            <div class="course-card">
+            <div class="course-card fadeInLeft" data-anime="600">
               <div class="card-titulo-container">
                 <h2 class="card-titulo color-font title-3">Matérias</h2>
                 <img src="../img/course/card/book.svg" />
@@ -107,7 +111,7 @@
               </div>
             </div>
 
-            <div class="course-card">
+            <div class="course-card fadeInLeft" data-anime="800">
               <div class="card-titulo-container">
                 <h2 class="card-titulo color-font title-3">Turmas</h2>
                 <img src="../img/course/card/clock.svg" />
@@ -117,13 +121,13 @@
                 <h3 class="title-4 color-font">Mínimo de alunos: 12</h3>
                 <p class="caption-1">Março até Dezembro de 2023 (Noturno)</p>
                 <ul class="body-1 data-list-card color-font">
-                  <li>Segunda a Sexta: 19h as 21:30</li>
+                  <li>Segunda a Sexta: De 19h a 21h30min</li>
                 </ul>
               </div>
             </div>
           </div>
 
-          <div class="button-contact-course">
+          <div class="button-contact-course" data-anime="400">
             <a href="../index.html#contato" class="btn-ver-mais button-font"
               >Contato</a
             >
@@ -179,15 +183,16 @@
             </ul>
             <ul class="body-2 footer-list-link">
               <li><a href="../index.html#galeria">Galeria</a></li>
-              <li><a href="../index.html#depoimentos">Depoimentos</a></li>
-              <li><a href="../index.html#perguntas">Pergunstas</a></li>
-              <li><a href="../index.html#parcerias">Parcerias</a></li>
+              <!-- <li><a href="../index.html#depoimentos">Depoimentos</a></li> -->
+              <li><a href="../index.html#perguntas">Perguntas</a></li>
+              <li><a href="../index.html#parceria">Parceria</a></li>
             </ul>
           </div>
 
           <div class="horario">
             <h6 class="body-1 footer-caption">Horário de Funcionamento</h6>
-            <p class="body-2">Seg - Dom: 07h - 23h</p>
+            <p class="body-2">Seg a Sex: De 8h a 22h</p>
+            <p class="body-2">Sáb: De 8h a 12h</p>
           </div>
         </div>
       </div>
@@ -203,6 +208,7 @@
       </div>
     </footer>
 
+    <script src="../js/global/simple-anime.js"></script>
     <script src="../js/scriptCourse.js" type="module"></script>
   </body>
 </html>

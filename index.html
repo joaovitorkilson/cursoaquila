@@ -4,22 +4,36 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="O Curso Áquila é sem sombra de dúvidas, um curso de excelência, que tem como seu objetivo maior: a formação e preparação do(a) aluno(a). Seu sucesso é nossa conquista reluzente em si próprio, vitória caracterizada pela obtenção de seu aproveitamento em suas atividades estudantis.">
+    <meta name="description" content="O Curso Áquila é um curso preparatório sediado em Barbacena MG, oferecemos preparatórios para concursos públicos, militares, policiais, cursos técnicos, de extensão, superior, reforços escolares e muito mais!!!">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Red+Hat+Display:wght@400;500;700&display=swap" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Red+Hat+Display:wght@400;500;700&display=swap" rel="stylesheet">   <link rel="shortcut icon" href="./img/home/aguia.ico" type="image/x-icon">
     <link rel="stylesheet" href="./css/style.css" />
+ 
     <link rel="canonical" href="https://aquilacursobq.com.br">
     <title>Curso Áquila | Preparando Vencedores</title>
-  </head>
+
+  <script>document.documentElement.classList.add('js')</script>
+</head>
   <body id="body">
+
+    
+    <div id="img-background">
+      <picture>
+        <source media="(max-width: 550px)" srcset="img/home/bg-tiny.jpg">
+        <source media="(max-width: 850px)" srcset="img/home/bg-small-tiny.jpg">
+        <source media="(max-width: 1050px)" srcset="img/home/bg-small.jpg">
+        <source media="(max-width: 1650px)" srcset="img/home/bg-medium.jpg">
+        <img src="img/home/bg-big.jpg" alt="Sala de aula">
+  
+      </picture>   
+    </div>
     <header class="header" id="inicio">
       <div class="header-container">
         <div class="pre-menu">
           <div class="contact-pre-menu body-2">
             <a class="number" href="https://wa.me/553287121759" target="_blank"><img src="./img/home/whatsapp-s.svg">(32) 987121759</a>
-            <p class="hours">Seg - Dom: 11h - 23h</p>
+            <p class="hours">Seg a Sex: De 8h a 22h, Sáb: De 8h a 12h</p>
           </div>
 
  
@@ -38,9 +52,9 @@
               <li><a class="item-menu-top" href="#sobre">Sobre Nós</a></li>
               <li><a class="item-menu-top" href="#equipe">Professores</a></li>
               <li><a class="item-menu-top" href="#galeria">Galeria</a></li>
-              <li><a class="item-menu-top" href="#depoimentos">Depoimentos</a></li>
+              <!--<li><a class="item-menu-top" href="#depoimentos">Depoimentos</a></li> -->
               <li><a class="item-menu-top" href="#perguntas">Perguntas</a></li>
-              <li><a class="item-menu-top" href="#parcerias">Parcerias</a></li>
+              <li><a class="item-menu-top" href="#parcerias">Parceria</a></li>
             </ul>
           </nav>
           <a href="#contato" id="contact-button" class="btn call-to-action button-font">contato</a>
@@ -54,15 +68,15 @@
       <section class="welcome">
         <div class="welcome-container">
           <div class="welcome-info">
-            <h1 class="title-1">Curso Áquila<br/> <span>Preparando Vencedores</span></h1>
-            <p class="caption-1">Não importa onde você deseja chegar no mundo dos concursos, o Áquila vai te ajudar a chegar lá mais rápido!</p>
-            <ul class="welcome-info-buttons">
+            <h1 class="title-1 fadeInDown"  data-anime="200">Curso Áquila<br/> <span>Preparando Vencedores</span></h1>
+            <p class="caption-1 fadeInDown"  data-anime="400">Não importa onde você deseja chegar no mundo dos concursos, o Áquila vai te ajudar a chegar lá mais rápido!</p>
+            <ul class="welcome-info-buttons"  data-anime="600">
               <li> <a href="https://wa.me/553287121759" target="_blank"  class="btn button-font">Entre em contato</a></li>
               <li><a href="#cursos" id="our-courses" class="btn button-font nossos-cursos">Nossos Cursos</a></li>
             </ul>
           </div>
   
-          <div class="aguia-img">
+          <div class="aguia-img fadeInDown"  data-anime="700">
             <img src="img/home/aguia.png" alt="Aguia da logo">
           </div>
         </div>
@@ -71,7 +85,7 @@
 
     <main>
 
-      <section class="our-courses" id="cursos">
+      <section class="our-courses js-scroll" id="cursos">
         <div class="courses-container">
           <div class="title-header">
             <h1 class="title-1">Nossos Cursos</h1>
@@ -90,7 +104,7 @@
 
           <div class="cards-container">
 
-            <div class="card militar">
+            <div class="card militar card-opacity">
               <div class="card-content">
                 <div class="card-image">
                   <img src="img/cards/epcar.png" alt="dom epcar">
@@ -101,7 +115,7 @@
               </div>
             </div>
 
-            <div class="card militar">
+            <div class="card militar card-opacity">
               <div class="card-content">
                 <div class="card-image">
                   <img src="img/cards/afa.png" alt="dom afa">
@@ -112,7 +126,7 @@
               </div>
             </div>
 
-            <div class="card militar">
+            <div class="card militar card-opacity">
               <div class="card-content">
                 <div class="card-image">
                   <img src="img/cards/eear.png" alt="dom eear">
@@ -123,7 +137,7 @@
               </div>
             </div>
 
-            <div class="card militar">
+            <div class="card militar card-opacity">
               <div class="card-content">
                 <div class="card-image">
                   <img src="img/cards/eear.png" alt="dom eear">
@@ -134,7 +148,7 @@
               </div>
             </div>
 
-            <div class="card militar">
+            <div class="card militar card-opacity">
               <div class="card-content">
                 <div class="card-image">
                   <img src="img/cards/bombeiros.png" alt="logo bombeiros mg">
@@ -145,7 +159,7 @@
               </div>
             </div>
 
-            <div class="card militar">
+            <div class="card militar card-opacity">
               <div class="card-content">
                 <div class="card-image">
                   <img src="img/cards/exercito.png" alt="simbolo exercito">
@@ -156,7 +170,7 @@
               </div>
             </div>
 
-            <div class="card militar">
+            <div class="card militar card-opacity">
               <div class="card-content">
                 <div class="card-image">
                   <img src="img/cards/exercito.png" alt="simbolo exercito">
@@ -168,7 +182,7 @@
             </div>
 
 
-            <div class="card militar policia">
+            <div class="card militar policia card-opacity">
               <div class="card-content img-enem">
                 <div class="card-image">
                   <img src="img/cards/pmmg.png" alt="logo pm mg">
@@ -179,7 +193,7 @@
               </div>
             </div>
 
-            <div class="card militar policia">
+            <div class="card militar policia card-opacity">
               <div class="card-content img-enem">
                 <div class="card-image">
                   <img src="img/cards/pmmg.png" alt="logo pm mg">
@@ -191,7 +205,7 @@
             </div>
 
 
-            <div class="card policia">
+            <div class="card policia card-opacity">
               <div class="card-content">
                 <div class="card-image img-enem">
                   <img src="img/cards/depen.png" alt="logo polícia penal">
@@ -202,7 +216,7 @@
               </div>
             </div>
 
-            <div class="card policia">
+            <div class="card policia card-opacity">
               <div class="card-content">
                 <div class="card-image">
                   <img src="img/cards/pf.png" alt="logo tjmg">
@@ -213,7 +227,7 @@
               </div>
             </div>
 
-            <div class="card policia">
+            <div class="card policia card-opacity">
               <div class="card-content">
                 <div class="card-image">
                   <img src="img/cards/prf.png" alt="logo tjmg">
@@ -224,9 +238,9 @@
               </div>
             </div>
 
-            <div class="card policia">
+            <div class="card policia card-opacity">
               <div class="card-content">
-                <div class="card-image img-enem">
+                <div class="card-image">
                   <img src="img/cards/pc.png" alt="logo policia civil">
                 </div>
                 <h2 class="title-4">Preparatório PC</h2>
@@ -235,9 +249,9 @@
               </div>
             </div>
 
-            <div class="card policia">
+            <div class="card policia card-opacity">
               <div class="card-content">
-                <div class="card-image img-enem">
+                <div class="card-image ">
                   <img src="img/cards/pmsp.png" alt="logo policia militar são paulo">
                 </div>
                 <h2 class="title-4">Preparatório PMSP</h2>
@@ -246,18 +260,18 @@
               </div>
             </div>
 
-            <div class="card concurso">
+            <div class="card concurso card-opacity">
               <div class="card-content">
                 <div class="card-image">
                   <img src="img/cards/tj-mg.png" alt="dom epcar">
                 </div>
                 <h2 class="title-4">Preparatório TJMG</h2>
-                <p class="body-2">O Tribunal de Justiça de Minas Gerais publicou o Edital 1/2022 para provimento de vagas existentes e formação de cadastro de reserva...</p>
+                <p class="body-2">As atribuições jurisdicionais do Tribunal de Justiça estão determinadas na Constituição do Estado de Minas Gerais ....</p>
                 <a href="/courses/tribunal-de-justica.html" class="body-1">Saiba mais →</a>
               </div>
             </div>
 
-            <div class="card concurso policia">
+            <div class="card concurso policia card-opacity">
               <div class="card-content">
                 <div class="card-image">
                   <img src="img/cards/sejusp.png" alt="dom epcar">
@@ -268,7 +282,7 @@
               </div>
             </div>
 
-            <div class="card concurso">
+            <div class="card concurso card-opacity">
               <div class="card-content">
                 <div class="card-image">
                   <img src="img/cards/fhemig.png" alt="dom epcar">
@@ -279,7 +293,7 @@
               </div>
             </div>
 
-            <div class="card concurso">
+            <div class="card concurso card-opacity">
               <div class="card-content">
                 <div class="card-image">
                   <img src="img/cards/fhemig.png" alt="dom epcar">
@@ -290,7 +304,7 @@
               </div>
             </div>
 
-            <div class="card concurso">
+            <div class="card concurso card-opacity">
               <div class="card-content">
                 <div class="card-image img-enem">
                   <img src="img/cards/correios.png" alt="dom epcar">
@@ -301,20 +315,20 @@
               </div>
             </div>
 
-            <div class="card concurso">
+            <div class="card concurso card-opacity">
               <div class="card-content">
                 <div class="card-image img-enem">
                   <img src="img/cards/inss.png" alt="dom epcar">
                 </div>
                 <h2 class="title-4">Preparatório INSS</h2>
-                <p class="body-2">Instituto Nacional do Seguro Social (INSS) é uma autarquia do Governo do Brasil vinculada ao Ministério do Trabalho e Previdência...</p>
+                <p class="body-2">O Instituto Nacional do Seguro Social (INSS) é uma autarquia do Governo do Brasil vinculada ao Ministério do Trabalho e Previdência...</p>
                 <a href="/courses/inss.html" class="body-1">Saiba mais →</a>
               </div>
             </div>
 
-            <div class="card concurso">
+            <div class="card concurso card-opacity">
               <div class="card-content">
-                <div class="card-image img-enem">
+                <div class="card-image ">
                   <img src="img/cards/mg.png" alt="logo mg">
                 </div>
                 <h2 class="title-4">Preparatório Prefeituras da região</h2>
@@ -324,7 +338,7 @@
             </div>
             
 
-            <div class="card vestibular">
+            <div class="card vestibular card-opacity">
               <div class="card-content">
               <div class="card-image img-enem">
                   <img src="img/cards/enem.png" alt="logo enem">
@@ -335,7 +349,7 @@
               </div>
             </div>
 
-            <div class="card vestibular">
+            <div class="card vestibular card-opacity">
               <div class="card-content">
               <div class="card-image">
                   <img src="img/cards/ifet.png" alt="logo ifet">
@@ -346,14 +360,26 @@
               </div>
             </div>
 
-            <div class="card cursos">
+            <div class="card cursos card-opacity">
               <div class="card-content">
-              <div class="card-image img-enem">
+              <div class="card-image">
                   <img src="img/cards/idosos.png" alt="logo enem">
                 </div>
                 <h2 class="title-4">Curso cuidador de Idosos</h2>
-                <p class="body-2">As notas do Enem podem ser usadas para acesso ao Sistema de Seleção Unificada (Sisu) e ao Programa Universidade para Todos (ProUni).</p>
+                <p class="body-2">O cuidador(a) de idosos é o(a) profissional fundamental na
+                  difícil tarefa de proporcionar...</p>
                 <a href="/courses/idosos.html" class="body-1">Saiba mais →</a>
+              </div>
+            </div>
+
+            <div class="card cursos card-opacity">
+              <div class="card-content">
+              <div class="card-image">
+                  <img src="img/cards/eletrica.png" alt="logo enem">
+                </div>
+                <h2 class="title-4">Curso de Elétrica Automotiva</h2>
+                <p class="body-2">O curso consiste na preparação de profissionais para o desenvolvimento de técnicas ...</p>
+                <a href="/courses/eletrica-automotiva.html" class="body-1">Saiba mais →</a>
               </div>
             </div>
 
@@ -367,7 +393,7 @@
       </section>
 
 
-      <section class="about" id="sobre">
+      <section class="about js-scroll" id="sobre">
         <div class="about-container">
           <div class="title-header">
             <h1 class="title-1 title-about">Sobre nós</h1>
@@ -405,7 +431,7 @@
         </div>
       </section>
 
-      <section class="team" id="equipe">
+      <section class="team js-scroll" id="equipe">
         <div class="team-container">
           <div class="title-header">
             <h1 class="title-1">Nossa equipe</h1>
@@ -430,26 +456,6 @@
                 <ul>
                   
                   <li><a href="https://www.instagram.com/ana.advocaciaextrajudicial/" target="_blank"><img src="img/team-cards/insta.svg" alt="instagram logo"></a></li>
-                </ul>
-              </div>
-              
-            </div>
-
-
-            <div class="team-card">
-              <div class="team-card-img">
-                <img src="img/team-cards/tarcisio.png" alt="Professores">
-              </div>
-
-              <div class="team-card-info">
-                <h4 class="caption-1">José Tarcísio Portes</h3>
-                <p class="caption-3">Professor de Português e Redação</p>
-              </div>
-
-              <div class="team-card-social">
-                <ul>
-                  
-                  <li><a href="https://www.instagram.com/aquilacurso.tarcisio/" target="_blank"><img src="img/team-cards/insta.svg" alt="email logo"></a></li>
                 </ul>
               </div>
               
@@ -534,6 +540,25 @@
 
             <div class="team-card">
               <div class="team-card-img">
+                <img src="img/team-cards/tarcisio.png" alt="Professores">
+              </div>
+
+              <div class="team-card-info">
+                <h4 class="caption-1">José Tarcísio Portes</h3>
+                <p class="caption-3">Professor de Português e Redação</p>
+              </div>
+
+              <div class="team-card-social">
+                <ul>
+                  
+                  <li><a href="https://www.instagram.com/aquilacurso.tarcisio/" target="_blank"><img src="img/team-cards/insta.svg" alt="email logo"></a></li>
+                </ul>
+              </div>
+              
+            </div>
+
+            <div class="team-card">
+              <div class="team-card-img">
                 <img src="img/team-cards/clayton.png" alt="Professores">
               </div>
 
@@ -596,14 +621,11 @@
 
               <div class="team-card-info">
                 <h4 class="caption-1">Ricardo Pereira Rodrigues</h3>
-                <p class="caption-3">Professor de biologia e ciências da natureza</p>
+                <p class="caption-3">Professor de Biologia e Ciências da Natureza</p>
               </div>
 
               <div class="team-card-social">
-                <ul>
-                  
-                  <li><a href="https://www.instagram.com/re_concursos/" target="_blank"><img src="img/team-cards/insta.svg" alt="email logo"></a></li>
-                </ul>
+
               </div>
               
             </div>
@@ -613,7 +635,7 @@
         </div>
       </section>
 
-      <section class="gallery" id="galeria">
+      <section class="gallery js-scroll" id="galeria">
         <div class="gallery-container">
           <div class="title-header  gallery-header">
             <h1 class="title-1">Galeria</h1>
@@ -714,7 +736,7 @@
         </div>
       </section>
 
-      <section class="testimonial" id="depoimentos">
+      <!-- <section class="testimonial" id="depoimentos">
         <div class="testimonial-container">
           <div class="title-header">
             <h1 class="title-1">Depoimentos</h1>
@@ -764,9 +786,9 @@
               </ul>
           </div>
         </div>
-      </section>  
+      </section>   -->
      
-      <section class="questions" id="perguntas">
+      <section class="questions js-scroll" id="perguntas">
         <div class="questions-container">
           <div class="title-header questions-title">
             <h1 class="title-1">Perguntas frequentes</h1>
@@ -776,7 +798,7 @@
               <div class="questions-column">
                 <div class="question-card">
                   <dt><h5 class="body-1"><span class="dt-id">1.</span>Quais apostilas utilizamos?</h5> <img class="open-questions-card" src="img/questions/down-arrow.svg"></dt>
-                  <dd class="body-2">Apostilas Mega, Movame e Opção. Além das montadas pela nossa equipe Aquila.</dd>
+                  <dd class="body-2">Apostilas Mega, Movame e Opção. Além das montadas pela nossa equipe Áquila.</dd>
                 </div>
 
                 
@@ -784,14 +806,16 @@
                   <dt><h5 class="body-1"><span class="dt-id">2.</span>Quais formas de pagamentos aceitamos?</h5> <img class="open-questions-card" src="img/questions/down-arrow.svg"></dt>
                   <dd class="body-2">Aceitamos dinheiro, pix, cheque, cartão de crédito e débito.</dd>
                 </div>
-  
-              </div>
 
-              <div class="questions-column">
                 <div class="question-card">
                   <dt><h5 class="body-1"><span class="dt-id">3.</span>Se eu trouxer um amigo, consigo desconto?</h5> <img class="open-questions-card" src="img/questions/down-arrow.svg"></dt>
                   <dd class="body-2">Sim, desconto pode variar de 5% a 20% dentro do valor estimado do Curso.</dd>
                 </div>
+  
+              </div>
+
+              <div class="questions-column">
+                
   
                 <div class="question-card">
                   <dt><h5 class="body-1"><span class="dt-id">4.</span>E se o curso que eu quero não estiver na lista?</h5> <img class="open-questions-card" src="img/questions/down-arrow.svg"></dt>
@@ -800,7 +824,7 @@
   
                 <div class="question-card">
                   <dt><h5 class="body-1"><span class="dt-id">5.</span>Como funciona a parceria entre a Universidade Única e o Curso Áquila?</h5> <img class="open-questions-card" src="img/questions/down-arrow.svg"></dt>
-                  <dd class="body-2">Aluno Aquila, já tem desconto garantido na matrícula de sua Graduação e Pós-graduação, além do apoio necessário para uma ótima formação profissional no Curso escolhido.</dd>
+                  <dd class="body-2">Aluno Áquila, já tem desconto garantido na matrícula de sua Graduação e Pós-graduação, além do apoio necessário para uma ótima formação profissional no Curso escolhido.</dd>
                 </div>
               </div>
 
@@ -809,17 +833,24 @@
         </div>
       </section>
 
-      <section class="partnership" id="parcerias">
+      <section class="partnership js-scroll" id="parcerias">
         <div class="partnership-container">
           <div class="title-header">
-            <h1 class="title-1">Parcerias</h1>
-            <p class="caption-1">Recentemente, fechamos uma parceria com a Faculdade ÚNICA, para ajudar nossos alunos a alcançar sua <span class="detail">graduação.</span></p>
+            <h1 class="title-1">Parceria</h1>
+            <p class="caption-1">Temos uma parceria com a Faculdade ÚNICA, visando facilitar nossos alunos a alcançar sua <span class="detail">Graduação e Cursos Técnicos.</span></p>
           </div>
 
           <div class="partnership-info">
-            <div class="unica-img">
-              <img src="img/partnership/unica.svg" alt="logo universidade única">
+            <div class="unica-img-video">
+              <div class="unica-img">
+                <img src="img/partnership/unica.svg" alt="logo universidade única">
+              </div>
+
+              <iframe  src="https://www.youtube.com/embed/CPkdtAdpvL0?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
             </div>
+
+            
 
             <div class="unica-description">
               <p class="body-1">
@@ -839,7 +870,7 @@
         </div>
       </section>
 
-      <section class="contact" id="contato">
+      <section class="contact js-scroll" id="contato">
         <div class="contact-container">
           <div class="title-header">
             <h1 class="title-1">Contato</h1>
@@ -848,6 +879,8 @@
 
           <div class="contact-form">
             <iframe class="contact-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10515.07474867584!2d-43.778460711469656!3d-21.22184928950888!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa22040309d3083%3A0xa2bba5c645ae641d!2sCondom%C3%ADnio%20do%20Edif%C3%ADcio%20S%C3%A3o%20Thiago%20-%20R.%20Felipe%20Paulo%20Curi%2C%2040%20-%20Centro%2C%20Barbacena%20-%20MG%2C%2036200-090!5e0!3m2!1spt-BR!2sbr!4v1666830875367!5m2!1spt-BR!2sbr" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+            <img id="map" class="contact-map-img" src="img/contact/maps.png" alt="mapa curso áquila">
 
             <div class="contact-form-list">
               <dl class="contact-list">
@@ -915,6 +948,7 @@
         </div>
       </section>
 
+      
     </main>
 
       <footer class="footer">
@@ -941,18 +975,18 @@
             </ul>
             <ul class="body-2 footer-list-link">
               <li><a href="#galeria">Galeria</a></li>
-              <li><a href="#depoimentos">Depoimentos</a></li>
-              <li><a href="#perguntas">Pergunstas</a></li>
-              <li><a href="#parcerias">Parcerias</a></li>
+              <!-- <li><a href="#depoimentos">Depoimentos</a></li> -->
+              <li><a href="#perguntas">Perguntas</a></li>
+              <li><a href="#parcerias">Parceria</a></li>
               
             </ul>
             </div>
 
-           
 
             <div class="horario">
               <h6 class="body-1 footer-caption">Horário de Funcionamento</h6>
-              <p class="body-2">Seg - Dom: 07h - 23h</p>
+              <p class="body-2">Seg a Sex: De 8h a 22h</p>
+              <p class="body-2">Sáb: De 8h a 12h</p>
             </div>
           </div>
 
@@ -962,6 +996,7 @@
         </div>
       </footer>
 
+    <script src="./js/global/simple-anime.js"></script>
     <script src="./js/script.js" type="module"></script>
     <script src="./js/global/form.js"></script>
 

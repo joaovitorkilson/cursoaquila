@@ -10,6 +10,9 @@ import scrollSuave from './global/scrollSuave.js'
 
 import effects from './global/effects.js'
 
+import animeScroll from './global/animeScroll.js'
+
+import animationItems from './global/animation.js'
 
 
 // Global
@@ -22,3 +25,14 @@ effects()
 menuCourses()
 gallery()
 questionCard()
+
+
+//Animation
+
+if (window.SimpleAnime) {
+
+  new SimpleAnime()
+}
+
+animationItems()
+animeScroll()

@@ -12,13 +12,12 @@ import effects from './global/effects.js'
 
 import animeScroll from './global/animeScroll.js'
 
-import animationItems from './global/animation.js'
 
 
 // Global
 hamburgerMenu()
 scrollSuave()
-effects()
+effects(null)
 
 // Sections 
 
@@ -34,5 +33,4 @@ if (window.SimpleAnime) {
   new SimpleAnime()
 }
 
-animationItems()
 animeScroll()

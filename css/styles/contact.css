@@ -13,7 +13,7 @@
 
 }
 .contact-form {
-  display: inline-block;
+  width: auto;
 }
 
 .contact-form-list {
@@ -26,7 +26,7 @@
 .js .contact-map {
   border: none;
   border-radius: 5px;
-  width: 1300px;
+  width: 100%;
   height: 230px;
   display: block;
 }
@@ -133,8 +133,8 @@
 }
 
 @media (max-width: 1400px) {
-   .contact-map, .contact-map-img {
-    width: 100%;
+   .contact-map {
+    width: 100% ;
     height: 230px;
   }
 }

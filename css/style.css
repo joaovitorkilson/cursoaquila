@@ -14,9 +14,9 @@
 @import "./styles/testimonial.css";
 @import "./styles/questions.css";
 @import "./styles/partnership.css";
-@import "./styles/contact.css";
 @import "./styles/courses.css";
 @import "./styles/footer.css";
+@import "./styles/contact.css";
 
 /* PAGES */
 
@@ -25,5 +25,5 @@
 
 
 /* PLUGINS */
-@import "components/photoswipe.css";
+@import "./components/photoswipe.css";
 @import "./utils/animation.css";

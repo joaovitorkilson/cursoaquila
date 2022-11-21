@@ -145,7 +145,7 @@
 
 
 .open-anime-menubar {
-    animation: slideDown forwards .3s;
+    animation: slideDown forwards .5s;
     
     
 }
@@ -283,7 +283,9 @@ nav.active li:last-child::after {
         margin-top: 60px;
     }
 
-    .menu ul,
+    .menu ul {
+        display: none;
+    }
     .call-to-action {
         display: none;
     }

@@ -11,7 +11,7 @@
       rel="stylesheet"
     />
 
-    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/style.min.css" />
     <title>Curso Áquila | Sobre nós</title>
     <script>
       document.documentElement.classList.add("js");
@@ -19,7 +19,7 @@
   </head>
   <body>
     <header>
-      <section class="about-us">
+      <section class="about-us fadeInDown" data-anime="400">
         <div class="about-us-container">
           <div class="menu-container" id="menu-container-about">
             <div class="menu">
@@ -34,7 +34,7 @@
                   <li><a href="./index.html#galeria">Galeria</a></li>
                   <li><a href="./index.html#depoimentos">Depoimentos</a></li>
                   <li><a href="./index.html#perguntas">Perguntas</a></li>
-                  <li><a href="./index.html#parceria">Parceria</a></li>
+                  <li><a href="./index.html#parcerias">Parceria</a></li>
                 </ul>
               </nav>
               <a
@@ -52,19 +52,27 @@
     <main>
       <section class="about-us-content">
         <div class="about-us-content-container">
-          <div class="img-about-us-container img-aguia-about-us">
+          <div
+            class="img-about-us-container img-aguia-about-us fadeInDown"
+            data-anime="400"
+          >
             <img src="img/about-us/aguia-about.png" alt="aguia logo" />
           </div>
 
           <div class="title-about-us">
-            <div class="img-about-us-container img-title-about-us">
+            <div
+              class="img-about-us-container img-title-about-us fadeInLeft"
+              data-anime="400"
+            >
               <img src="img/about-us/curso-aquila.png" />
             </div>
-            <h2 class="title-3">Preparando Vencedores</h2>
+            <h2 class="title-3 fadeInLeft" data-anime="400">
+              Preparando Vencedores
+            </h2>
           </div>
 
           <div class="text-about-us-container">
-            <p class="body-1">
+            <p class="body-1 fadeInLeft" data-anime="600">
               O Curso Áquila é sem sombra de dúvidas, um curso de excelência,
               que tem como seu objetivo maior: a formação e preparação do(a)
               aluno(a). Seu sucesso é nossa conquista reluzente em si próprio,
@@ -72,7 +80,7 @@
               atividades estudantis.
             </p>
 
-            <p class="body-1">
+            <p class="body-1 fadeInLeft" data-anime="800">
               Criado pela necessidade de se fazer chegar conhecimento efetivo e
               de qualidade para os alunos com um sistema educacional de
               qualidade, o referido curso nasceu em 02 de julho de 2014, visando
@@ -81,13 +89,13 @@
               disciplinas.
             </p>
 
-            <p class="body-1">
+            <p class="body-1 fadeInLeft" data-anime="1000">
               Sediado em Barbacena-MG, o Curso Áquila é uma instituição com a
               finalidade de preparar da melhor forma possível o aluno(a) /
               concurseiro(a), para os diversos concursos e fins escolares.
             </p>
 
-            <p class="body-1">
+            <p class="body-1 fadeInLeft" data-anime="1200">
               Seu nome retirado da lendária ave astuta e fiel de Júpiter, o
               líder dos deuses da Mitologia Romana, retrata a luta do estudante
               e valoriza a sua vitória diante da dificuldade vencida, a
@@ -110,16 +118,28 @@
           </p>
           <ul class="footer-list">
             <li>
-              <a href=""><img src="img/footer/whatsapp.svg" /></a>
+              <a href="https://wa.me/553287121759" target="_blank"
+                ><img src="../img/footer/whatsapp.svg"
+              /></a>
             </li>
             <li>
-              <a href=""><img src="img/footer/insta.svg" /></a>
+              <a
+                href="https://www.instagram.com/aquilacurso.tarcisio/"
+                target="_blank"
+                ><img src="../img/footer/insta.svg"
+              /></a>
             </li>
             <li>
-              <a href=""><img src="img/footer/twitter.svg" /></a>
+              <a href="https://twitter.com/AquilacursoT" target="_blank"
+                ><img src="../img/footer/twitter.svg"
+              /></a>
             </li>
             <li>
-              <a href=""><img src="img/footer/facebook.svg" /></a>
+              <a
+                href="https://www.facebook.com/profile.php?id=100049945943384"
+                target="_blank"
+                ><img src="../img/footer/facebook.svg"
+              /></a>
             </li>
           </ul>
         </div>
@@ -128,25 +148,16 @@
           <div class="links">
             <h6 class="body-1 footer-caption">Links úteis</h6>
             <ul class="body-2 footer-list-link">
-              <li><a href="">Início</a></li>
-              <li><a href="">Nossos Cursos</a></li>
-              <li><a href="">Sobre Nós</a></li>
-              <li><a href="">Professores</a></li>
+              <li><a href="./index.html#inicio">Início</a></li>
+              <li><a href="./index.html#cursos">Nossos Cursos</a></li>
+              <li><a href="./index.html#sobre">Sobre Nós</a></li>
+              <li><a href="./index.html#equipe">Professores</a></li>
             </ul>
             <ul class="body-2 footer-list-link">
-              <li><a href="">Galeria</a></li>
-              <li><a href="">Depoimentos</a></li>
-              <li><a href="">Perguntas</a></li>
-              <li><a href="">Parceria</a></li>
-            </ul>
-          </div>
-
-          <div class="cursos">
-            <h6 class="body-1 footer-caption">Cursos</h6>
-            <ul class="footer-list-link">
-              <li><a href="" class="body-2">Cursos Técnicos</a></li>
-              <li><a href="" class="body-2">Cursos Profissionais</a></li>
-              <li><a href="" class="body-2">Cursos Superiores</a></li>
+              <li><a href="./index.html#galeria">Galeria</a></li>
+              <!-- <li><a href="../index.html#depoimentos">Depoimentos</a></li> -->
+              <li><a href="./index.html#perguntas">Perguntas</a></li>
+              <li><a href="./index.html#parcerias">Parceria</a></li>
             </ul>
           </div>
 
@@ -159,11 +170,16 @@
       </div>
       <div class="developed-by">
         <h6 class="caption-2">
-          Desenvolvido por <span><a href="">Vitor Kilson</a></span>
+          Desenvolvido por
+          <span
+            ><a href="https://joaovitorkilson.github.io/" target="_blank"
+              >Vitor Kilson</a
+            ></span
+          >
         </h6>
       </div>
     </footer>
-
+    <script src="./js/global/simple-anime.js"></script>
     <script src="./js/scriptAbout.js" type="module"></script>
   </body>
 </html>

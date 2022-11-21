@@ -1,2 +1,5 @@
 *.php
+*.json
 PHPMailer
+.vscode
+.gitignore
